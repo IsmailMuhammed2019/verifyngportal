@@ -12,11 +12,14 @@ const Header = () => {
   return (
     <header className="bg-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-green-800 text-2xl font-bold flex items-center">
-          <img src="/logo.png" alt="VerifyNGPortal Logo" className="mr-2 h-8" />
-          <Link href="/">
-            <div className="text-green-600">VerifyNG</div>
-          </Link>
+        <div className="flex flex-col items-start">
+          <div className="flex items-center">
+            <img src="/logo.png" alt="VerifyNGPortal Logo" className="mr-2 h-8" />
+            <Link href="/">
+              <div className="text-green-800 text-2xl font-bold">VerifyNG</div>
+            </Link>
+          </div>
+          <div className="text-green-600 text-sm">one verification for all...</div>
         </div>
         <nav className="md:flex md:space-x-6 items-center">
           <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:items-center md:space-x-6`}>
