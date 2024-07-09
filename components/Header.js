@@ -19,7 +19,7 @@ const Header = () => {
               <div className="text-green-800 text-2xl font-bold">VerifyNG</div>
             </Link>
           </div>
-          <div className="text-green-800 text-xs ml-4">one verification for all...</div>
+          <div className="text-green-800 text-xs ml-3">one verification for all...</div>
         </div>
         <nav className="md:flex md:space-x-6 items-center">
           <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:items-center md:space-x-6`}>
