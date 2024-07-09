@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white p-4">
+    <header className="bg-white p-4 font-roboto">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex flex-col items-start">
           <div className="flex items-center">
@@ -23,10 +23,16 @@ const Header = () => {
         </div>
         <nav className="md:flex md:space-x-6 items-center">
           <ul className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:items-center md:space-x-6`}>
-            <li><Link href="/" className="text-green-800 hover:text-gray-lighter transition duration-300">Home</Link></li>
-            <li><Link href="/pricing" className="text-green-800 hover:text-gray-lighter transition duration-300">Pricing</Link></li>
-            <li><Link href="/contact" className="text-green-800 hover:text-gray-lighter transition duration-300">Contact</Link></li>
-            <li><Link href="/signin" className="text-green-800 hover:bg-white text-green-800 py-2 px-4 rounded transition duration-300">Sign In</Link></li>
+            <li><Link href="/" className="text-green-800 hover:text-gray-600 transition duration-300">Home</Link></li>
+            <li><Link href="/pricing" className="text-green-800 hover:text-gray-600 transition duration-300">Pricing</Link></li>
+            <li><Link href="/contact" className="text-green-800 hover:text-gray-600 transition duration-300">Contact</Link></li>
+            <li>
+              <Link href="/signin">
+                <button className="bg-green-800 text-white py-2 px-4 rounded transition duration-300 hover:bg-white hover:text-green-800 border border-green-800">
+                  Sign In
+                </button>
+              </Link>
+            </li>
           </ul>
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-green-800 focus:outline-none">
