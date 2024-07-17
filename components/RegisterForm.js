@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
     companyName: '',
-    companyAddress: '',
     contactPerson: '',
     contactEmail: '',
     contactPhone: '',
@@ -115,7 +114,7 @@ const RegisterForm = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-end mt-10">
           <button type="submit" className="bg-green-800 text-white p-3 pr-20 pl-20 rounded-lg hover:bg-white hover:text-green-800 hover:border transition duration-300">Next</button>
         </div>
       </form>
